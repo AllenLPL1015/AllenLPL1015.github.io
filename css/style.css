@@ -233,7 +233,7 @@ a {
   margin: 3px;
 }
 #container .left-col {
-  background: #feb215;
+  background: #fabd19;
   width: 300px;
   position: fixed;
   opacity: 1;
@@ -246,7 +246,7 @@ a {
 #container .left-col .overlay {
   width: 100%;
   height: 180px;
-  background-color: #00497d;
+  background-color: #552684;
   position: absolute;
   opacity: 1;
 }
@@ -490,7 +490,7 @@ a {
 #header .profilepic {
   text-align: center;
   display: block;
-  border: 5px solid #feb215;
+  border: 5px solid #fabd19;
   -webkit-border-radius: 300px;
   border-radius: 300px;
   width: 128px;
