@@ -205,7 +205,7 @@ a {
   height: 110px;
   position: absolute;
   width: 100%;
-  background: #a6a6a6;
+  background: #4d4d4d;
 }
 #container #mobile-nav .overlay.fixed {
   position: fixed;
@@ -233,10 +233,10 @@ a {
   margin: 3px;
 }
 #container .left-col {
-  background: #000;
+  background: #fff;
   width: 300px;
   position: fixed;
-  opacity: 0.1;
+  opacity: 1;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
