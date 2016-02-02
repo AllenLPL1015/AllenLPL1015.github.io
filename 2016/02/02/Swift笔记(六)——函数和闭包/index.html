@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>泣子貘的一点笔记</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Swift笔记(六)——函数和闭包函数的基本定义和调用之前已经了解过
+返回值Optional元组返回值返回值这里值得一提的是有些函数可能会返回nil的结果，这时需要使用optional的返回值。只需要在返回的元组类型后加一个问号。
+参数参数名一个参数允许有外部名，参数名使用空格分开。没有指定外部名的时候，默认，第一个参数省略其外部名，而其他参数使用它的本地名作为外部名。
+1234func text">
+<meta property="og:type" content="article">
+<meta property="og:title" content="泣子貘的一点笔记">
+<meta property="og:url" content="http://yoursite.com/2016/02/02/Swift笔记(六)——函数和闭包/index.html">
+<meta property="og:site_name" content="泣子貘的一点笔记">
+<meta property="og:description" content="Swift笔记(六)——函数和闭包函数的基本定义和调用之前已经了解过
+返回值Optional元组返回值返回值这里值得一提的是有些函数可能会返回nil的结果，这时需要使用optional的返回值。只需要在返回的元组类型后加一个问号。
+参数参数名一个参数允许有外部名，参数名使用空格分开。没有指定外部名的时候，默认，第一个参数省略其外部名，而其他参数使用它的本地名作为外部名。
+1234func text">
+<meta property="og:updated_time" content="2016-02-02T02:57:29.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="泣子貘的一点笔记">
+<meta name="twitter:description" content="Swift笔记(六)——函数和闭包函数的基本定义和调用之前已经了解过
+返回值Optional元组返回值返回值这里值得一提的是有些函数可能会返回nil的结果，这时需要使用optional的返回值。只需要在返回的元组类型后加一个问号。
+参数参数名一个参数允许有外部名，参数名使用空格分开。没有指定外部名的时候，默认，第一个参数省略其外部名，而其他参数使用它的本地名作为外部名。
+1234func text">
+  
+    <link rel="alternative" href="/atom.xml" title="泣子貘的一点笔记" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/headicon.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">泣子貘</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">极端的环境锻炼人极端的适应能力，不能因为出门踩上的狗屎放弃一生的旅行。</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">泣子貘</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/headicon.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">泣子貘</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Swift笔记(六)——函数和闭包" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/02/Swift笔记(六)——函数和闭包/" class="article-date">
+  	<time datetime="2016-02-02T02:57:29.000Z" itemprop="datePublished">2016-02-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Swift笔记(六)——函数和闭包">Swift笔记(六)——函数和闭包</h1><p>函数的基本定义和调用之前已经了解过</p>
+<h2 id="返回值">返回值</h2><h3 id="Optional元组返回值">Optional元组返回值</h3><p>返回值这里值得一提的是有些函数可能会返回<code>nil</code>的结果，这时需要使用<code>optional</code>的返回值。<br>只需要在返回的元组类型后加一个问号。</p>
+<h2 id="参数">参数</h2><h3 id="参数名">参数名</h3><p>一个参数允许有外部名，参数名使用空格分开。<br>没有指定外部名的时候，默认，第一个参数省略其外部名，而其他参数使用它的本地名作为外部名。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">textFunc</span><span class="params">(first: Int, second: Int)</span></span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">textFunc(<span class="number">4</span>, second: <span class="number">7</span>);</span><br></pre></td></tr></table></figure>
+<p>外部参数名与本地名用空格区分，写在前面。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">someFunc</span><span class="params">(external local:Int)</span></span> &#123;</span><br><span class="line">	<span class="comment">//内部使用local</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>当制定了外部参数名，使用时，必须显示的写出外部参数名，不管是第一个还是第二个。<br>因为默认除了第一个参数会使用本地参数名当外部参数名，调用的时候除了第一个参数名其他都不能省略，为了省略可以把<code>_</code>作为其他参数的外部参数名，这样调用的时候就可以省略了。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">ssss</span><span class="params">(s: Int, <span class="number">_</span> y: Int)</span></span> &#123;</span><br><span class="line">	   </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ssss(<span class="number">4</span>, <span class="number">4</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="参数默认值">参数默认值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">some</span><span class="params">(param: Int = <span class="number">12</span>)</span></span> &#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="不定参数">不定参数</h3><p>每个函数最多只能有一个不定参数，它可以接收0到多个值作为参数。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">more</span><span class="params">(numbers: Double...)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">more(<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7.2</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="常量参数与变量参数">常量参数与变量参数</h3><p>即<code>const</code>或<code>非const</code>参数。参数默认都是常量，从内部修改参数会导致编译错误，遇到需要修改参数的时候，使用变量参数。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">right</span><span class="params">(<span class="keyword">var</span> string: String)</span></span> &#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样在函数内参数<code>string</code>可以被修改了，但是并不会保留到函数结束。</p>
+<h3 id="In-Out参数">In-Out参数</h3><p>对于那些确实想在函数内修改并一直保留的，使用<code>inout</code>关键字，注意这样的参数是不允许有默认值的，在调用时要加上<code>&amp;</code>操作符。即引用传参。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">swap</span><span class="params">(<span class="keyword">inout</span> a: Int, <span class="keyword">inout</span> <span class="number">_</span> b: Int)</span></span> &#123;</span><br><span class="line">	<span class="keyword">let</span> temp = a</span><br><span class="line">	a = b</span><br><span class="line">	b = temp</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> some1 = <span class="number">4</span></span><br><span class="line"><span class="keyword">var</span> some2 = <span class="number">7</span></span><br><span class="line"><span class="built_in">swap</span>(&amp;some1, &amp;some2)</span><br></pre></td></tr></table></figure>
+<h2 id="函数类型">函数类型</h2><p>根据函数的参数类型和个数以及返回值类型，可以定义一个函数类型，比如<code>(Int, Int) -&gt; Int</code>就是一个函数的类型。</p>
+<h3 id="函数类型的作用">函数类型的作用</h3><p>最简单的就是当成正常的量来使用</p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="reserved">var</span> <span class="attribute">funcTemp</span>: <span class="function"><span class="params">(Int, Int)</span> -&gt;</span> String = someFunc</span><br></pre></td></tr></table></figure>
+<h2 id="闭包">闭包</h2><p>闭包的基本定义和使用方式概述中有</p>
+<h3 id="后缀闭包">后缀闭包</h3><p>当闭包作为函数的最后一个参数且有时候过长时，可以跟随在函数后面。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">some</span><span class="params">(closeure: <span class="params">()</span></span></span> -&gt; void) &#123;</span><br><span class="line">	<span class="comment">//函数定义</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//使用后缀的方式</span></span><br><span class="line">some() &#123;</span><br><span class="line">	<span class="comment">//闭包的内容</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//比如</span></span><br><span class="line">reversed = name.<span class="built_in">sort</span>() &#123; $<span class="number">0</span> &lt; $<span class="number">1</span> &#125;</span><br></pre></td></tr></table></figure>
+<p>可以推断类型的情况，比如sort函数，可以根据成员的类型来推断参数的类型，此时可以省略。</p>
+<h3 id="捕获值">捕获值</h3><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">func increment<span class="function"><span class="params">(forincre amount: Int)</span> -&gt;</span> <span class="function"><span class="params">()</span> -&gt;</span> Int &#123;</span><br><span class="line">	<span class="keyword">var</span> run = <span class="number">0</span></span><br><span class="line">	func funcInner<span class="function"><span class="params">()</span> -&gt;</span> Int &#123;</span><br><span class="line">		run += amout</span><br><span class="line">		<span class="keyword">return</span> run</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> funcInner</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个函数包含一个内部函数，它捕获了<code>run</code>和参数<code>amout</code>的引用，保证了它们不会释放，如果是外部不可变的量，则会以<code>copy</code>的形式存储。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let incre = <span class="function"><span class="title">increment</span><span class="params">(<span class="number">10</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">incre</span><span class="params">(<span class="number">10</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">incre</span><span class="params">(<span class="number">10</span>)</span></span></span><br><span class="line"><span class="comment">//run的值不断增加</span></span><br><span class="line"></span><br><span class="line">let incre2 = <span class="function"><span class="title">increment</span><span class="params">(<span class="number">5</span>)</span></span></span><br><span class="line"><span class="comment">//单独计数</span></span><br></pre></td></tr></table></figure>
+<p>某个类的属性闭包如果在内部引用了其本身会引起<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">##&#38381;&#21253;&#26159;&#24341;&#29992;&#31867;&#22411;&#10;&#38381;&#21253;&#21644;&#20989;&#25968;&#37117;&#26159;&#24341;&#29992;&#31867;&#22411;&#65292;&#25152;&#20197;&#20043;&#21069;&#36171;&#20540;&#32473;&#24120;&#37327;&#20250;&#19968;&#30452;&#20445;&#30041;&#12290;&#10;###&#38750;&#36867;&#36920;&#38381;&#21253;&#10;&#38381;&#21253;&#34987;&#20256;&#32473;&#19968;&#20010;&#20989;&#25968;&#20316;&#20026;&#21442;&#25968;&#65292;&#20294;&#26159;&#22312;&#20989;&#25968;&#36820;&#22238;&#20043;&#21518;&#25165;&#35843;&#29992;&#65292;&#34987;&#31216;&#20026;&#36867;&#36920;&#38381;&#21253;&#65292;&#20351;&#29992;`@noescape`&#20851;&#38190;&#23383;&#21487;&#20197;&#31105;&#27490;&#38381;&#21253;&#36867;&#36920;&#12290;&#24456;&#22810;&#26102;&#20505;&#38381;&#21253;&#26159;&#38656;&#35201;&#36867;&#36920;&#30340;&#65292;&#27604;&#22914;&#23427;&#36171;&#20540;&#32473;&#19968;&#20010;&#22806;&#37096;&#21464;&#37327;&#25110;&#32773;&#28155;&#21152;&#21040;&#19968;&#20010;&#22806;&#37096;&#38598;&#21512;&#65292;&#25110;&#32773;&#20687;`sort`&#36825;&#26679;&#30340;&#20989;&#25968;&#12290;&#36825;&#31181;&#26102;&#20505;&#20989;&#25968;&#36820;&#22238;&#20294;&#26159;&#38381;&#21253;&#24182;&#27809;&#26377;&#25191;&#34892;&#12290;&#10;###&#33258;&#21160;&#38381;&#21253;&#10;`@autoclosure`&#33258;&#21160;&#38381;&#21253;&#20851;&#38190;&#23383;&#21487;&#20197;&#33258;&#21160;&#32473;&#34920;&#36798;&#24335;&#21152;&#19978;&#22823;&#25324;&#21495;&#20174;&#32780;&#36991;&#20813;&#26174;&#31034;&#30340;&#20889;&#12290;</span><br></pre></td></tr></table></figure></p>
+<pre><code>func serve<span class="function"><span class="params">(<span class="property">@autoclosure</span> cus: () -&gt; String)</span> {
+    <span class="title">print</span><span class="params">(<span class="string">"\(cus)"</span>)</span>;
+}
+
+<span class="title">serve</span><span class="params">(customServe.removeAtIndex(<span class="number">0</span>))</span></span>
+</code></pre><p>```<br>此外，这个关键字还隐含指定闭包为非逃逸闭包。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/02/02/Swift笔记(四)——集合/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/02/02/Swift笔记(五)——流程控制/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 泣子貘
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
