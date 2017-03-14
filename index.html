@@ -151,6 +151,65 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/03/14/hello-world/" class="article-date">
+  	<time datetime="2017-03-14T09:39:32.000Z" itemprop="datePublished">2017-03-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/14/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-Swift笔记(一) —— Swift概览" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -752,65 +811,6 @@ print<span class="params">(farmAnimal.isDisjointWith<span class="params">(cityAn
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#if TARGET_OS_IPHONE</span></span><br><span class="line"><span class="comment">/* 后台session完成事件，调用处理handler */</span></span><br><span class="line">-(<span class="keyword">void</span>)URLSessionDidFinishEventsForBackgroundURLSession:(<span class="built_in">NSURLSession</span> *)session</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Background URL session %@ finished events.\n"</span>, session);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span> (session<span class="variable">.configuration</span><span class="variable">.identifier</span>)</span><br><span class="line">        [<span class="keyword">self</span> callCompletionHandlerForSession: session<span class="variable">.configuration</span><span class="variable">.identifier</span>];</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">- (<span class="keyword">void</span>) addCompletionHandler: (CompletionHandlerType) handler forSession: (<span class="built_in">NSString</span> *)identifier</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> ([ <span class="keyword">self</span><span class="variable">.completionHandlerDictionary</span> objectForKey: identifier]) &#123;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@"Error: Got multiple handlers for a single session identifier.  This should not happen.\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    [ <span class="keyword">self</span><span class="variable">.completionHandlerDictionary</span> setObject:handler forKey: identifier];</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">/* 处理handler存在一个字典里，key是identifier */</span></span><br><span class="line">- (<span class="keyword">void</span>) callCompletionHandlerForSession: (<span class="built_in">NSString</span> *)identifier</span><br><span class="line">&#123;</span><br><span class="line">    CompletionHandlerType handler = [<span class="keyword">self</span><span class="variable">.completionHandlerDictionary</span> objectForKey: identifier];</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span> (handler) &#123;</span><br><span class="line">        [<span class="keyword">self</span><span class="variable">.completionHandlerDictionary</span> removeObjectForKey: identifier];</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@"Calling completion handler.\n"</span>);</span><br><span class="line"> </span><br><span class="line">        handler();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">#endif</span></span><br></pre></td></tr></table></figure>
 <p>后台下载任务的App delegate方法：</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 在处理后台事件时给session delegate存储handler的字典里添加一个session对应的handler */</span></span><br><span class="line">- (<span class="keyword">void</span>)application:(<span class="built_in">UIApplication</span> *)application handleEventsForBackgroundURLSession:(<span class="built_in">NSString</span> *)identifier completionHandler:(<span class="keyword">void</span> (^)())completionHandler</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSURLSessionConfiguration</span> *backgroundConfigObject = [<span class="built_in">NSURLSessionConfiguration</span> backgroundSessionConfiguration: identifier];</span><br><span class="line"> </span><br><span class="line">    <span class="built_in">NSURLSession</span> *backgroundSession = [<span class="built_in">NSURLSession</span> sessionWithConfiguration: backgroundConfigObject delegate: <span class="keyword">self</span><span class="variable">.mySessionDelegate</span> delegateQueue: [<span class="built_in">NSOperationQueue</span> mainQueue]];</span><br><span class="line"> </span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Rejoining session %@\n"</span>, identifier);</span><br><span class="line"> </span><br><span class="line">    [ <span class="keyword">self</span><span class="variable">.mySessionDelegate</span> addCompletionHandler: completionHandler forSession: identifier];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/07/26/hello-world/" class="article-date">
-  	<time datetime="2015-07-26T04:22:19.000Z" itemprop="datePublished">2015-07-26</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
       
     </div>
